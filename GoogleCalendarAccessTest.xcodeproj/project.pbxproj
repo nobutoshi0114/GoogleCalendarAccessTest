@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		311631D7152DE51800DD16EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311631D6152DE51800DD16EC /* UIKit.framework */; };
+		311631D9152DE51800DD16EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311631D8152DE51800DD16EC /* Foundation.framework */; };
+		311631DB152DE51800DD16EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311631DA152DE51800DD16EC /* CoreGraphics.framework */; };
+		311631E1152DE51800DD16EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 311631DF152DE51800DD16EC /* InfoPlist.strings */; };
+		311631E3152DE51800DD16EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 311631E2152DE51800DD16EC /* main.m */; };
+		311631E7152DE51800DD16EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 311631E6152DE51800DD16EC /* AppDelegate.m */; };
+		311631EA152DE51800DD16EC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 311631E9152DE51800DD16EC /* MasterViewController.m */; };
+		311631ED152DE51800DD16EC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 311631EC152DE51800DD16EC /* DetailViewController.m */; };
+		311631F0152DE51800DD16EC /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311631EE152DE51800DD16EC /* MasterViewController.xib */; };
+		311631F3152DE51800DD16EC /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311631F1152DE51800DD16EC /* DetailViewController.xib */; };
+		311631FB152DE51800DD16EC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311631FA152DE51800DD16EC /* SenTestingKit.framework */; };
+		311631FC152DE51800DD16EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311631D6152DE51800DD16EC /* UIKit.framework */; };
+		311631FD152DE51800DD16EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311631D8152DE51800DD16EC /* Foundation.framework */; };
+		31163205152DE51800DD16EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31163203152DE51800DD16EC /* InfoPlist.strings */; };
+		31163208152DE51800DD16EC /* GoogleCalendarAccessTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31163207152DE51800DD16EC /* GoogleCalendarAccessTestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		311631FE152DE51800DD16EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311631C9152DE51800DD16EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311631D1152DE51800DD16EC;
+			remoteInfo = GoogleCalendarAccessTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		311631D2152DE51800DD16EC /* GoogleCalendarAccessTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleCalendarAccessTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		311631D6152DE51800DD16EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		311631D8152DE51800DD16EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		311631DA152DE51800DD16EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		311631DE152DE51800DD16EC /* GoogleCalendarAccessTest-Info.plist */ = {isa = PBXFileReference; path = "GoogleCalendarAccessTest-Info.plist"; sourceTree = "<group>"; };
+		311631E0152DE51800DD16EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		311631E2152DE51800DD16EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		311631E4152DE51800DD16EC /* GoogleCalendarAccessTest-Prefix.pch */ = {isa = PBXFileReference; path = "GoogleCalendarAccessTest-Prefix.pch"; sourceTree = "<group>"; };
+		311631E5152DE51800DD16EC /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		311631E6152DE51800DD16EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		311631E8152DE51800DD16EC /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		311631E9152DE51800DD16EC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		311631EB152DE51800DD16EC /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		311631EC152DE51800DD16EC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		311631EF152DE51800DD16EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		311631F2152DE51800DD16EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		311631F9152DE51800DD16EC /* GoogleCalendarAccessTestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleCalendarAccessTestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		311631FA152DE51800DD16EC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		31163202152DE51800DD16EC /* GoogleCalendarAccessTestTests-Info.plist */ = {isa = PBXFileReference; path = "GoogleCalendarAccessTestTests-Info.plist"; sourceTree = "<group>"; };
+		31163204152DE51800DD16EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31163206152DE51800DD16EC /* GoogleCalendarAccessTestTests.h */ = {isa = PBXFileReference; path = GoogleCalendarAccessTestTests.h; sourceTree = "<group>"; };
+		31163207152DE51800DD16EC /* GoogleCalendarAccessTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleCalendarAccessTestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		311631CF152DE51800DD16EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311631D7152DE51800DD16EC /* UIKit.framework in Frameworks */,
+				311631D9152DE51800DD16EC /* Foundation.framework in Frameworks */,
+				311631DB152DE51800DD16EC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311631F5152DE51800DD16EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311631FB152DE51800DD16EC /* SenTestingKit.framework in Frameworks */,
+				311631FC152DE51800DD16EC /* UIKit.framework in Frameworks */,
+				311631FD152DE51800DD16EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		311631C7152DE51800DD16EC = {
+			isa = PBXGroup;
+			children = (
+				311631DC152DE51800DD16EC /* GoogleCalendarAccessTest */,
+				31163200152DE51800DD16EC /* GoogleCalendarAccessTestTests */,
+				311631D5152DE51800DD16EC /* Frameworks */,
+				311631D3152DE51800DD16EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		311631D3152DE51800DD16EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				311631D2152DE51800DD16EC /* GoogleCalendarAccessTest.app */,
+				311631F9152DE51800DD16EC /* GoogleCalendarAccessTestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		311631D5152DE51800DD16EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				311631D6152DE51800DD16EC /* UIKit.framework */,
+				311631D8152DE51800DD16EC /* Foundation.framework */,
+				311631DA152DE51800DD16EC /* CoreGraphics.framework */,
+				311631FA152DE51800DD16EC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		311631DC152DE51800DD16EC /* GoogleCalendarAccessTest */ = {
+			isa = PBXGroup;
+			children = (
+				311631E5152DE51800DD16EC /* AppDelegate.h */,
+				311631E6152DE51800DD16EC /* AppDelegate.m */,
+				311631E8152DE51800DD16EC /* MasterViewController.h */,
+				311631E9152DE51800DD16EC /* MasterViewController.m */,
+				311631EB152DE51800DD16EC /* DetailViewController.h */,
+				311631EC152DE51800DD16EC /* DetailViewController.m */,
+				311631EE152DE51800DD16EC /* MasterViewController.xib */,
+				311631F1152DE51800DD16EC /* DetailViewController.xib */,
+				311631DD152DE51800DD16EC /* Supporting Files */,
+			);
+			path = GoogleCalendarAccessTest;
+			sourceTree = "<group>";
+		};
+		311631DD152DE51800DD16EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				311631DE152DE51800DD16EC /* GoogleCalendarAccessTest-Info.plist */,
+				311631DF152DE51800DD16EC /* InfoPlist.strings */,
+				311631E2152DE51800DD16EC /* main.m */,
+				311631E4152DE51800DD16EC /* GoogleCalendarAccessTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31163200152DE51800DD16EC /* GoogleCalendarAccessTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				31163206152DE51800DD16EC /* GoogleCalendarAccessTestTests.h */,
+				31163207152DE51800DD16EC /* GoogleCalendarAccessTestTests.m */,
+				31163201152DE51800DD16EC /* Supporting Files */,
+			);
+			path = GoogleCalendarAccessTestTests;
+			sourceTree = "<group>";
+		};
+		31163201152DE51800DD16EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31163202152DE51800DD16EC /* GoogleCalendarAccessTestTests-Info.plist */,
+				31163203152DE51800DD16EC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		311631D1152DE51800DD16EC /* GoogleCalendarAccessTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3116320B152DE51800DD16EC /* Build configuration list for PBXNativeTarget "GoogleCalendarAccessTest" */;
+			buildPhases = (
+				311631CE152DE51800DD16EC /* Sources */,
+				311631CF152DE51800DD16EC /* Frameworks */,
+				311631D0152DE51800DD16EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleCalendarAccessTest;
+			productName = GoogleCalendarAccessTest;
+			productReference = 311631D2152DE51800DD16EC /* GoogleCalendarAccessTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		311631F8152DE51800DD16EC /* GoogleCalendarAccessTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3116320E152DE51800DD16EC /* Build configuration list for PBXNativeTarget "GoogleCalendarAccessTestTests" */;
+			buildPhases = (
+				311631F4152DE51800DD16EC /* Sources */,
+				311631F5152DE51800DD16EC /* Frameworks */,
+				311631F6152DE51800DD16EC /* Resources */,
+				311631F7152DE51800DD16EC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				311631FF152DE51800DD16EC /* PBXTargetDependency */,
+			);
+			name = GoogleCalendarAccessTestTests;
+			productName = GoogleCalendarAccessTestTests;
+			productReference = 311631F9152DE51800DD16EC /* GoogleCalendarAccessTestTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		311631C9152DE51800DD16EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 311631CC152DE51800DD16EC /* Build configuration list for PBXProject "GoogleCalendarAccessTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 311631C7152DE51800DD16EC;
+			productRefGroup = 311631D3152DE51800DD16EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				311631D1152DE51800DD16EC /* GoogleCalendarAccessTest */,
+				311631F8152DE51800DD16EC /* GoogleCalendarAccessTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		311631D0152DE51800DD16EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311631E1152DE51800DD16EC /* InfoPlist.strings in Resources */,
+				311631F0152DE51800DD16EC /* MasterViewController.xib in Resources */,
+				311631F3152DE51800DD16EC /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311631F6152DE51800DD16EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31163205152DE51800DD16EC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		311631F7152DE51800DD16EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		311631CE152DE51800DD16EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311631E3152DE51800DD16EC /* main.m in Sources */,
+				311631E7152DE51800DD16EC /* AppDelegate.m in Sources */,
+				311631EA152DE51800DD16EC /* MasterViewController.m in Sources */,
+				311631ED152DE51800DD16EC /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311631F4152DE51800DD16EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31163208152DE51800DD16EC /* GoogleCalendarAccessTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		311631FF152DE51800DD16EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311631D1152DE51800DD16EC /* GoogleCalendarAccessTest */;
+			targetProxy = 311631FE152DE51800DD16EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		311631DF152DE51800DD16EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311631E0152DE51800DD16EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		311631EE152DE51800DD16EC /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311631EF152DE51800DD16EC /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		311631F1152DE51800DD16EC /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311631F2152DE51800DD16EC /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+		31163203152DE51800DD16EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31163204152DE51800DD16EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31163209152DE51800DD16EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3116320A152DE51800DD16EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3116320C152DE51800DD16EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleCalendarAccessTest/GoogleCalendarAccessTest-Prefix.pch";
+				INFOPLIST_FILE = "GoogleCalendarAccessTest/GoogleCalendarAccessTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3116320D152DE51800DD16EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleCalendarAccessTest/GoogleCalendarAccessTest-Prefix.pch";
+				INFOPLIST_FILE = "GoogleCalendarAccessTest/GoogleCalendarAccessTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3116320F152DE51800DD16EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoogleCalendarAccessTest.app/GoogleCalendarAccessTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleCalendarAccessTest/GoogleCalendarAccessTest-Prefix.pch";
+				INFOPLIST_FILE = "GoogleCalendarAccessTestTests/GoogleCalendarAccessTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		31163210152DE51800DD16EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoogleCalendarAccessTest.app/GoogleCalendarAccessTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleCalendarAccessTest/GoogleCalendarAccessTest-Prefix.pch";
+				INFOPLIST_FILE = "GoogleCalendarAccessTestTests/GoogleCalendarAccessTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		311631CC152DE51800DD16EC /* Build configuration list for PBXProject "GoogleCalendarAccessTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31163209152DE51800DD16EC /* Debug */,
+				3116320A152DE51800DD16EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3116320B152DE51800DD16EC /* Build configuration list for PBXNativeTarget "GoogleCalendarAccessTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3116320C152DE51800DD16EC /* Debug */,
+				3116320D152DE51800DD16EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3116320E152DE51800DD16EC /* Build configuration list for PBXNativeTarget "GoogleCalendarAccessTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3116320F152DE51800DD16EC /* Debug */,
+				31163210152DE51800DD16EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 311631C9152DE51800DD16EC /* Project object */;
+}
