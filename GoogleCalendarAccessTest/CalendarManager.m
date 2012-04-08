@@ -203,7 +203,7 @@ finishedWithFeed:(GDataFeedCalendar *)feed
         [comps setDay:startDay]; // 開始日 [0日後から]
         NSDate *minDate = [nsCalendar dateByAddingComponents:comps toDate:[NSDate date] options:0];
         [comps setDay:endDay]; // 終了日 [180日後まで]
-        NSDate *maxDate = [nsCalendar dateByAddingComponents:comps toDate:[NSDate date] options:180];
+        NSDate *maxDate = [nsCalendar dateByAddingComponents:comps toDate:[NSDate date] options:0];
         // タイムゾーン
         NSTimeZone *tz = [NSTimeZone localTimeZone];
         
