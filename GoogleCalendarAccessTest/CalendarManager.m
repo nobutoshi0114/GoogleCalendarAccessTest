@@ -104,17 +104,12 @@
     NSString *calendarTitle = [[feed title] stringValue];
     m_CalendarData = [self getCalendarDataByName:calendarTitle];
     
-    //GDataEntryCalendar *gDataCalendar;
-    GDataEntryCalendarEvent *gDataEvent;
-    GDataTextConstruct *titleTextConstruct;
-    
-    for (GDataFeedCalendar* feedCalendars in [feed entries]) {
+    for (GDataEntryCalendarEvent *gDataEvent in [feed entries]) {
         
         // Get Event Infos
         m_EventData = [[EventData alloc] init];
-        gDataEvent = (GDataEntryCalendarEvent *)feedCalendars;
         
-        titleTextConstruct = [gDataEvent title];
+        GDataTextConstruct *titleTextConstruct = [gDataEvent title];
         
         NSString *title = [titleTextConstruct stringValue];
         m_EventData.eventTitle = title;
@@ -131,6 +126,10 @@
             m_EventData.endTime   = [[when   endTime] date];
             // 時間(時、分、秒)が無いとき、終日と判定
             m_EventData.allDay = !([[when startTime] hasTime]) && !([[when endTime] hasTime]);
+            
+            if ( !([[when startTime] hasTime]) && !([[when endTime] hasTime]) ) {
+                // 開始時間、終了時間ともに時間指定なし
+            }
         }
         
         // イベントの場所取得
@@ -181,7 +180,7 @@ finishedWithFeed:(GDataFeedCalendar *)feed
         // CalendarManagerにCalendarを追加作成
         m_CalendarData = [self createCalendar:calendarTitle];                     // カレンダー名
         m_CalendarData.calendarLocation    = [[calendar locations] description];  // カレンダーの場所
-        m_CalendarData.calendarDescription = [calendar.title stringValue];        // カレンダーの説明
+        m_CalendarData.calendarDescription = [calendar description];              // カレンダーの説明
         
         // イベントデータの表示色
         GDataColorProperty *colorProp = [calendar color];
@@ -192,6 +191,7 @@ finishedWithFeed:(GDataFeedCalendar *)feed
         m_CalendarData.timezone = [NSTimeZone timeZoneWithName:timeZoneString];
         
         NSURL *calendarURL = [link URL]; // カレンダーから取得したalternateLink
+        NSLog(@"%@", [calendarURL description]);
         
         // イベントデータ取得定義開始
         GDataQueryCalendar *query = [GDataQueryCalendar calendarQueryWithFeedURL:calendarURL];
